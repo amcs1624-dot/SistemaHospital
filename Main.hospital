@@ -10,15 +10,18 @@ public class Main {
         List<String> efectos = new ArrayList<>();
         List<Paciente> pacientes = new ArrayList<>();
 
-        efectos.add("Náuseas");
-
+      
+      
         Tratamiento t1 = new Tratamiento("T01", "Quimioterapia", 30, efectos);
         Examen e1 = new Examen("E01", LocalDate.now(), "Biopsia", "Pendiente");
 
-        examenes.add(e1);
-        tratamientos.add(t1);
+        examenes.add();
+        tratamientos.add();
+        Sistema sistema = new Sistema(pacientes);
+        sistema.agregarPaciente();
 
-        Paciente p1 = new Paciente(
+
+        Paciente  = new Paciente(
                 "12345",
                 "Ana López",
                 45,
@@ -30,9 +33,7 @@ public class Main {
                 tratamientos
         );
 
-        Sistema sistema = new Sistema(pacientes);
-        sistema.agregarPaciente(p1);
 
-        System.out.println("Sistema funcionando correctamente 🚀");
+        System.out.println("Sistema funcionando correctamente ");
     }
 }
