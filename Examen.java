@@ -1,23 +1,46 @@
+package hospital;
+
 import java.time.LocalDate;
 
+
 public class Examen {
-    private String idExamen;
-    private LocalDate fechaExamen;
-    private String tipoExamen;
-    private String resultado;
+	
+		private String id;
 
-    public Examen(String idExamen, LocalDate fechaExamen, String tipoExamen, String resultado) {
-        this.idExamen = idExamen;
-        this.fechaExamen = fechaExamen;
-        this.tipoExamen = tipoExamen;
-        this.resultado = resultado;
-    }
+		private LocalDate fecha;
 
-    public String getResultado() {
-        return resultado;
-    }
+		private String tipo;
 
-    public void setResultado(String resultado) {
-        this.resultado = resultado;
-    }
-}
+		
+
+		
+
+		public Examen(String id, LocalDate fecha, String tipo) {
+
+			super();
+
+			this.id = id;
+
+			this.fecha = fecha;
+
+			this.tipo = tipo;
+
+		}
+
+		
+
+		@Override
+
+		public String toString() {
+
+			
+
+			return "Identificador del exámen: "+ this.id + "Fecha del exámen" 
+
+			+ this.fecha+ " Tipo del exámen" + this.tipo  ;
+
+		}
+
+		
+
+	}
